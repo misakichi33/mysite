@@ -1,0 +1,241 @@
+﻿@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/*すべてのwebページに適用される*/
+*{
+	font-family: 'Fuzzy Bubbles', cursive;
+	font-family: 'Potta One', cursive;
+	font-family: 'Yuji Boku', serif;
+
+	font-weight: bold;
+	text-align: center
+
+
+}
+.wf-nicomoji {
+	font-family: "Nico Moji";
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* 背景用*/
+body {
+  padding: 30px;
+}
+
+
+button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+  margin:50px;
+}
+
+.btn-border-shadow {
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+
+  background: #fff;
+}
+
+.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #000;
+  border-radius: 0.5rem;
+}
+
+.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.btn-border-shadow--color {
+  border-radius: 0;
+  background: yellow;
+}
+
+.btn-border-shadow--color:before {
+  border-radius: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* 背景用*/
+body {
+  padding: 30px;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow {
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+
+  background: #fff;
+}
+
+a.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #000;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+
+a.btn-border-shadow--color {
+  border-radius: 0;
+  background: yellow;
+}
+
+a.btn-border-shadow--color:before {
+  border-radius: 0;
+}
+
+
+h1{
+	font-size:45px;
+	font-color:#005500;
+}
+p{
+	font-size:25px;
+	font-color:#005500;
+}
+form{
+	font-size:25px;
+	font-color:#005500;
+}
+.footer{
+
+	margin-top: 30px;
+	padding: 80px 15px 20px 15px;
+	font-size: 13px;
+	color: black;
+}
+.閲覧{
+	font-size:15px;
+}
+
+.ログイン{
+	font-size:15px;
+}
+
+.ログアウト{
+
+}
+
+.更新{
+	font-size:15px;
+}
+
+span{
+	background:linear-gradient(transparent 60%, #6f6 60%);
+}
+
+input{
+    border-radius: 7px;
+}
+
+/*アニメーション*/
+
+.box {
+  border-radius:5px;
+
+  animation: poyon 1.6s infinite;
+}
+
+@keyframes poyon {
+  0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+  15%  { transform: scale(0.9, 0.9) translate(0%, 5%); }
+  30%  { transform: scale(1.3, 0.8) translate(0%, 10%); }
+  50%  { transform: scale(0.8, 1.3) translate(0%, -10%); }
+  70%  { transform: scale(1.1, 0.9) translate(0%, 5%); }
+  100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+}
